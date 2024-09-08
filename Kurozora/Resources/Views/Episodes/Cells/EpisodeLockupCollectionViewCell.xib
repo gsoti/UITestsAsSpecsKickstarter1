@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="dUR-lC-qNQ" customClass="EpisodeLockupCollectionViewCell" customModule="Kurozora" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="421.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rIF-v6-2n7">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="421.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YY-qy-Rcf" userLabel="Shadow View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kso-7k-pdi" userLabel="Corner View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholders/Episode Banner" translatesAutoresizingMaskIntoConstraints="NO" id="Eyp-5T-Wke" customClass="BannerImageView" customModule="Kurozora" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Eyp-5T-Wke" firstAttribute="leading" secondItem="Kso-7k-pdi" secondAttribute="leading" id="cxv-gQ-Elz"/>
+                                    <constraint firstItem="Eyp-5T-Wke" firstAttribute="top" secondItem="Kso-7k-pdi" secondAttribute="top" id="qdC-Kw-aPX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eyp-5T-Wke" secondAttribute="trailing" id="zrs-g8-mjM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Eyp-5T-Wke" secondAttribute="bottom" id="zvF-3J-zru"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="375" placeholder="YES" id="CeO-DO-DP4"/>
+                            <constraint firstAttribute="width" secondItem="3YY-qy-Rcf" secondAttribute="height" multiplier="16:9" id="ERw-Sc-ead"/>
+                            <constraint firstItem="Kso-7k-pdi" firstAttribute="leading" secondItem="3YY-qy-Rcf" secondAttribute="leading" id="IGw-jS-mQa"/>
+                            <constraint firstAttribute="trailing" secondItem="Kso-7k-pdi" secondAttribute="trailing" id="Y33-bL-2WH"/>
+                            <constraint firstAttribute="bottom" secondItem="Kso-7k-pdi" secondAttribute="bottom" id="mfq-9U-NHU"/>
+                            <constraint firstItem="Kso-7k-pdi" firstAttribute="top" secondItem="3YY-qy-Rcf" secondAttribute="top" id="snG-UT-Pyy"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6Vr-3C-ooQ">
+                        <rect key="frame" x="0.0" y="219" width="375" height="202.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4I-Ev-6Vb">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S1 · E3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rS0-wl-dmb" customClass="KSecondaryLabel" customModule="Kurozora" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="27.5" width="49" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The End of the Beginning and the Beginning of the End" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doD-Ch-lqu" customClass="KLabel" customModule="Kurozora" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55" width="358" height="42.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RYh-Wy-jTi" customClass="KButton" customModule="Kurozora" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="105.5" width="41" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.01" maxX="0.0" maxY="0.01"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="_test">
+                                    <color key="titleColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showButtonPressed:" destination="dUR-lC-qNQ" eventType="touchUpInside" id="SfB-5H-ZgS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 views · Apr 2, 2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVr-LC-Pih" customClass="KSecondaryLabel" customModule="Kurozora" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="146.5" width="143" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" red="0.90065288200000004" green="0.89906244960000004" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBn-5g-t5i" customClass="KTintedButton" customModule="Kurozora" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="172.5" width="142" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="r5g-Xm-djd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Mark as Watched"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="highlightBackgroundColorEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="watchStatusButtonPressed:" destination="dUR-lC-qNQ" eventType="touchUpInside" id="8Rz-p0-q9c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3YY-qy-Rcf" firstAttribute="leading" secondItem="rIF-v6-2n7" secondAttribute="leading" id="6LF-yc-eFq"/>
+                    <constraint firstAttribute="trailing" secondItem="3YY-qy-Rcf" secondAttribute="trailing" id="AEe-4v-XKg"/>
+                    <constraint firstItem="6Vr-3C-ooQ" firstAttribute="top" secondItem="3YY-qy-Rcf" secondAttribute="bottom" constant="8" symbolic="YES" id="Cib-lk-Qb7"/>
+                    <constraint firstItem="3YY-qy-Rcf" firstAttribute="top" secondItem="rIF-v6-2n7" secondAttribute="top" id="SHx-vL-iRV"/>
+                    <constraint firstAttribute="trailing" secondItem="6Vr-3C-ooQ" secondAttribute="trailing" id="d2I-Fe-CIP"/>
+                    <constraint firstItem="6Vr-3C-ooQ" firstAttribute="leading" secondItem="rIF-v6-2n7" secondAttribute="leading" id="oCB-aq-zYe"/>
+                    <constraint firstAttribute="bottom" secondItem="6Vr-3C-ooQ" secondAttribute="bottom" id="t6P-is-3fM"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="tintColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="cornerView" destination="Kso-7k-pdi" id="Tg9-FG-3c1"/>
+                <outlet property="episodeImageView" destination="Eyp-5T-Wke" id="1ic-Cz-tl9"/>
+                <outlet property="primaryLabel" destination="doD-Ch-lqu" id="UJG-Nk-za5"/>
+                <outlet property="rankLabel" destination="D4I-Ev-6Vb" id="ItD-2c-SYe"/>
+                <outlet property="secondaryLabel" destination="rS0-wl-dmb" id="IPR-eb-Tcj"/>
+                <outlet property="shadowView" destination="3YY-qy-Rcf" id="fHP-KG-bKG"/>
+                <outlet property="showButton" destination="RYh-Wy-jTi" id="QgC-VQ-uTb"/>
+                <outlet property="ternaryLabel" destination="HVr-LC-Pih" id="qgK-2Z-0ZO"/>
+                <outlet property="watchStatusButton" destination="OBn-5g-t5i" id="gni-27-aEW"/>
+            </connections>
+            <point key="canvasLocation" x="-580" y="-187"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Placeholders/Episode Banner" width="1920" height="1080"/>
+    </resources>
+</document>

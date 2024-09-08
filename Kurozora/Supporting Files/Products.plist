@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>app.kurozora.nonConsumable.kurozoraOne</key>
+	<string>Kurozora One</string>
+	<key>app.kurozora.consumable.wolfTip</key>
+	<string>🐺</string>
+	<key>app.kurozora.consumable.tigerTip</key>
+	<string>🐯</string>
+	<key>app.kurozora.consumable.demonTip</key>
+	<string>👺</string>
+	<key>app.kurozora.consumable.dragonTip</key>
+	<string>🐲</string>
+	<key>app.kurozora.consumable.godTip</key>
+	<string>🙏</string>
+	<key>app.kurozora.consumable.extraterrestrialTip</key>
+	<string>👽</string>
+	<key>app.kurozora.consumable.eternalTip</key>
+	<string>♾️</string>
+	<key>app.kurozora.autoRenewableSubscription.kPlus1Month</key>
+	<string>One Month</string>
+	<key>app.kurozora.autoRenewableSubscription.kPlus6Months</key>
+	<string>Six Months</string>
+	<key>app.kurozora.autoRenewableSubscription.kPlus12Months</key>
+	<string>Twelve Months</string>
+</dict>
+</plist>

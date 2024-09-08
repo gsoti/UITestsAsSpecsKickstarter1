@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Default</string>
+		<key>icons</key>
+		<array>
+			<string>Kurozora</string>
+			<string>Kuro-chan</string>
+			<string>Day</string>
+			<string>Night</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Events</string>
+		<key>icons</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Gems</string>
+		<key>icons</key>
+		<array>
+			<string>Amethyst</string>
+			<string>Onyx</string>
+			<string>Ruby</string>
+			<string>Sapphire</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Nature</string>
+		<key>icons</key>
+		<array>
+			<string>Winter</string>
+			<string>Spring</string>
+			<string>Summer</string>
+			<string>Fall</string>
+			<string>Sakura</string>
+			<string>Flame</string>
+			<string>Wind</string>
+			<string>Thunder</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Premium</string>
+		<key>icons</key>
+		<array>
+			<string>Coral</string>
+			<string>Dutch Orange</string>
+			<string>Green</string>
+			<string>Ocean Blue</string>
+			<string>Peach Orange</string>
+			<string>Red</string>
+			<string>Rose Gold</string>
+			<string>Sky Blue</string>
+			<string>Yellow</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Special Edition</string>
+		<key>icons</key>
+		<array>
+			<string>Cookiezora</string>
+			<string>Kurogram</string>
+			<string>Kurolicious</string>
+			<string>Monozora</string>
+			<string>Product(RED)</string>
+		</array>
+	</dict>
+</array>
+</plist>

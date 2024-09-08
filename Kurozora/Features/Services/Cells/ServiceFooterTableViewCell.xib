@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServiceFooterTableViewCell" id="1o8-yG-NdZ" customClass="ServiceFooterTableViewCell" customModule="Kurozora" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1o8-yG-NdZ" id="MHj-K3-ELr">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2E-cZ-RuO" customClass="KLabel" customModule="Kurozora" customModuleProvider="target">
+                        <rect key="frame" x="20" y="0.0" width="374" height="110.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="3ee-qS-Cz6"/>
+                        </constraints>
+                        <string key="text">Payment will be charged to your Apple ID account at the confirmation of purchase. Subscription automatically renews unless it is canceled at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period. You can manage and cancel your subscriptions by going to your account settings on the App Store after purchase.</string>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ckO-ZM-yhu">
+                        <rect key="frame" x="50.5" y="118.5" width="313" height="27.5"/>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="For more information, please visit our ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="Privacy Policy">
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                        <connections>
+                            <action selector="privacyButtonPressed:" destination="1o8-yG-NdZ" eventType="touchUpInside" id="tuw-xL-DyH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="R2E-cZ-RuO" firstAttribute="centerX" secondItem="MHj-K3-ELr" secondAttribute="centerX" id="6wE-xo-IsZ"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="ckO-ZM-yhu" secondAttribute="trailing" id="GHe-rE-olA"/>
+                    <constraint firstItem="ckO-ZM-yhu" firstAttribute="top" secondItem="R2E-cZ-RuO" secondAttribute="bottom" constant="8" symbolic="YES" id="Izw-cX-08g"/>
+                    <constraint firstItem="R2E-cZ-RuO" firstAttribute="top" secondItem="MHj-K3-ELr" secondAttribute="top" id="Rwc-X4-00N"/>
+                    <constraint firstItem="ckO-ZM-yhu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MHj-K3-ELr" secondAttribute="leadingMargin" id="TsO-si-neB"/>
+                    <constraint firstItem="R2E-cZ-RuO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MHj-K3-ELr" secondAttribute="leadingMargin" id="X9J-ID-LYs"/>
+                    <constraint firstItem="ckO-ZM-yhu" firstAttribute="centerX" secondItem="R2E-cZ-RuO" secondAttribute="centerX" id="bCN-UD-fXN"/>
+                    <constraint firstAttribute="bottom" secondItem="ckO-ZM-yhu" secondAttribute="bottom" id="lp8-l4-uCr"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="R2E-cZ-RuO" secondAttribute="trailing" id="vEd-r1-TWh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="R1j-sm-eEQ"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="R2E-cZ-RuO" id="9iR-Wc-T0a"/>
+                <outlet property="privacyButton" destination="ckO-ZM-yhu" id="xYm-ZL-fqH"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="207.25446428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

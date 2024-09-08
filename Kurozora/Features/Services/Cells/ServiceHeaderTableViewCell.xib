@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServiceHeaderTableViewCell" id="xyn-N3-2aw" customClass="ServiceHeaderTableViewCell" customModule="Kurozora" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xyn-N3-2aw" id="bfj-jN-GPU">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem your code using the camera on your device." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYv-zJ-nOV" customClass="KLabel" customModule="Kurozora" customModuleProvider="target">
+                        <rect key="frame" x="47.5" y="0.0" width="319" height="42.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Found a Kurozora code in the wild? This is the place to redeem it!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udL-n2-1Ye" customClass="KLabel" customModule="Kurozora" customModuleProvider="target">
+                        <rect key="frame" x="20" y="50.5" width="374" height="38"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oYv-zJ-nOV" firstAttribute="top" secondItem="bfj-jN-GPU" secondAttribute="top" id="EJk-sP-DTG"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="oYv-zJ-nOV" secondAttribute="trailing" id="ETK-h3-gKM"/>
+                    <constraint firstItem="udL-n2-1Ye" firstAttribute="centerX" secondItem="oYv-zJ-nOV" secondAttribute="centerX" id="NHL-Xt-gz4"/>
+                    <constraint firstItem="udL-n2-1Ye" firstAttribute="top" secondItem="oYv-zJ-nOV" secondAttribute="bottom" constant="8" symbolic="YES" id="WMB-8x-r2z"/>
+                    <constraint firstAttribute="bottom" secondItem="udL-n2-1Ye" secondAttribute="bottom" id="Wuk-Iu-CJp"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="udL-n2-1Ye" secondAttribute="trailing" id="Xng-2S-aAL"/>
+                    <constraint firstItem="udL-n2-1Ye" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bfj-jN-GPU" secondAttribute="leadingMargin" id="gjV-Zz-5sb"/>
+                    <constraint firstItem="oYv-zJ-nOV" firstAttribute="centerX" secondItem="bfj-jN-GPU" secondAttribute="centerX" id="hfa-KV-OdN"/>
+                    <constraint firstItem="oYv-zJ-nOV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bfj-jN-GPU" secondAttribute="leadingMargin" id="yIA-7f-rhE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="Xma-02-TU8"/>
+            <connections>
+                <outlet property="headlineLabel" destination="oYv-zJ-nOV" id="LPv-RI-Wfj"/>
+                <outlet property="subheadLabel" destination="udL-n2-1Ye" id="OyV-Ju-4gN"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="160.37946428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

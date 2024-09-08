@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="38B-e3-pz3">
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Au8-Ad-oj1">
+            <objects>
+                <navigationController storyboardIdentifier="LibraryKNavigationController" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="38B-e3-pz3" customClass="KNavigationController" customModule="Kurozora" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="trA-Wa-Z9y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20784313730000001" green="0.2274509804" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="B4w-wJ-4Cf" kind="relationship" relationship="rootViewController" id="1LR-Yk-cFX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vL-CK-tr0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1645" y="865"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="HTe-q8-fSw">
+            <objects>
+                <viewController storyboardIdentifier="LibraryViewController" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B4w-wJ-4Cf" customClass="LibraryViewController" customModule="Kurozora" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="mUg-UP-NVd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcz-X9-dwb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-nI-2L5">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gPc-nI-2L5" firstAttribute="top" secondItem="tcz-X9-dwb" secondAttribute="top" id="8Pv-AD-g19"/>
+                                    <constraint firstAttribute="trailing" secondItem="gPc-nI-2L5" secondAttribute="trailing" id="Qpu-4m-5wJ"/>
+                                    <constraint firstItem="gPc-nI-2L5" firstAttribute="leading" secondItem="tcz-X9-dwb" secondAttribute="leading" id="QvF-gm-PMR"/>
+                                    <constraint firstAttribute="bottom" secondItem="gPc-nI-2L5" secondAttribute="bottom" id="vOo-ym-1pH"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeV-PO-okM">
+                                <rect key="frame" x="20" y="810" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" placeholder="YES" id="qFh-Wc-p4X"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eO3-3e-MEr">
+                                <rect key="frame" x="0.0" y="140" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="ulg-05-9h9">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" id="YLm-jv-Iqy">
+                                            <rect key="frame" x="20" y="5.6666666666666679" width="374" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Anime"/>
+                                                <segment title="Literatures"/>
+                                                <segment title="Games"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="libraryKindSegmentedControlDidChange:" destination="B4w-wJ-4Cf" eventType="valueChanged" id="YeU-7X-Byd"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="66t-RL-IQm"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tcz-X9-dwb" firstAttribute="leading" secondItem="66t-RL-IQm" secondAttribute="leading" id="0fH-OT-TI9"/>
+                            <constraint firstItem="66t-RL-IQm" firstAttribute="trailing" secondItem="eO3-3e-MEr" secondAttribute="trailing" id="1Km-Ko-7Uu"/>
+                            <constraint firstAttribute="top" secondItem="tcz-X9-dwb" secondAttribute="top" id="3vH-iB-Tad"/>
+                            <constraint firstItem="JeV-PO-okM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mUg-UP-NVd" secondAttribute="leadingMargin" id="Uae-7L-uBe"/>
+                            <constraint firstItem="eO3-3e-MEr" firstAttribute="top" secondItem="66t-RL-IQm" secondAttribute="top" id="VdP-kY-5wf"/>
+                            <constraint firstItem="gPc-nI-2L5" firstAttribute="width" secondItem="mUg-UP-NVd" secondAttribute="width" id="Vwp-S1-VXK"/>
+                            <constraint firstItem="JeV-PO-okM" firstAttribute="centerX" secondItem="66t-RL-IQm" secondAttribute="centerX" id="hmW-9H-Q4y"/>
+                            <constraint firstItem="eO3-3e-MEr" firstAttribute="leading" secondItem="66t-RL-IQm" secondAttribute="leading" id="l1G-y1-zoB"/>
+                            <constraint firstItem="gPc-nI-2L5" firstAttribute="height" secondItem="mUg-UP-NVd" secondAttribute="height" id="nzt-3V-8ao"/>
+                            <constraint firstItem="66t-RL-IQm" firstAttribute="bottom" secondItem="JeV-PO-okM" secondAttribute="bottom" constant="8" id="pQ5-V8-eO5"/>
+                            <constraint firstItem="66t-RL-IQm" firstAttribute="trailing" secondItem="tcz-X9-dwb" secondAttribute="trailing" id="twA-Je-J4S"/>
+                            <constraint firstItem="66t-RL-IQm" firstAttribute="bottom" secondItem="tcz-X9-dwb" secondAttribute="bottom" constant="-34" id="vcV-WQ-WIv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JeV-PO-okM" secondAttribute="trailing" id="y1E-ur-s5u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Library" leftItemsSupplementBackButton="YES" id="Aja-xv-l4D">
+                        <barButtonItem key="leftBarButtonItem" title="Filter" id="0uS-C2-wld">
+                            <imageReference key="image" image="line.3.horizontal.decrease.circle" catalog="system"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Profile" id="wda-zg-EBM">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mrO-Jg-FaX" customClass="ProfileImageButton" customModule="Kurozora" customModuleProvider="target">
+                                    <rect key="frame" x="342" y="5" width="52" height="34"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="mrO-Jg-FaX" secondAttribute="height" multiplier="1:1" id="Yp2-Ve-DJs"/>
+                                        <constraint firstAttribute="width" constant="28" id="dRv-Yn-Ket"/>
+                                    </constraints>
+                                    <state key="normal" title="Profile">
+                                        <color key="titleColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="profileButtonPressed:" destination="B4w-wJ-4Cf" eventType="touchUpInside" id="6aX-j5-con"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem title="More" image="ellipsis.circle" catalog="system" id="g5C-MO-gs3"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bottomBarView" destination="JeV-PO-okM" id="87a-eg-BSy"/>
+                        <outlet property="libraryKindSegmentedControl" destination="YLm-jv-Iqy" id="CEV-5D-OgT"/>
+                        <outlet property="moreBarButtonItem" destination="g5C-MO-gs3" id="zha-GH-Edy"/>
+                        <outlet property="profileImageButton" destination="mrO-Jg-FaX" id="Rja-Zn-Mn2"/>
+                        <outlet property="scrollView" destination="tcz-X9-dwb" id="6gt-P2-2yy"/>
+                        <outlet property="scrollViewHeightConstraint" destination="vcV-WQ-WIv" id="lqY-zo-25h"/>
+                        <outlet property="sortTypeBarButtonItem" destination="0uS-C2-wld" id="pgJ-HN-nHY"/>
+                        <outlet property="toolbar" destination="eO3-3e-MEr" id="SlQ-4i-DCL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mIX-KF-4qF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-848" y="865"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="ellipsis.circle" catalog="system" width="128" height="123"/>
+        <image name="line.3.horizontal.decrease.circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
