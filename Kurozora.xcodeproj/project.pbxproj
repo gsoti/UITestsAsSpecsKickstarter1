@@ -9,11 +9,24 @@
 /* Begin PBXBuildFile section */
 		09BE000F6F2351D2CB3E60C6 /* Pods_KurozoraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACB1949DFCBD4EE2BD7B173 /* Pods_KurozoraUITests.framework */; };
 		3E7E9BCBF9A52A8E8F560219 /* Pods_KurozoraWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D126E524B2938236D39BCF3 /* Pods_KurozoraWidgetExtension.framework */; };
-		5E3A87952C8CAE240075726C /* KurozoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A87942C8CAE240075726C /* KurozoraUITests.swift */; };
-		5E3A87972C8CAE240075726C /* KurozoraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A87962C8CAE240075726C /* KurozoraUITestsLaunchTests.swift */; };
-		5E3A879E2C8D5DBC0075726C /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A879D2C8D5DBC0075726C /* Robot.swift */; };
-		5E3A87A02C8D63220075726C /* TabBarRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A879F2C8D63220075726C /* TabBarRobot.swift */; };
-		5E3A87A22C8D63910075726C /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A87A12C8D63910075726C /* Stubs.swift */; };
+		5E0E759D2C8D9A390086F4C3 /* MaintenanceRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E759C2C8D9A390086F4C3 /* MaintenanceRobot.swift */; };
+		5E0E759F2C8DA3FB0086F4C3 /* EmbeddedSafariRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E759E2C8DA3FB0086F4C3 /* EmbeddedSafariRobot.swift */; };
+		5E0E75A12C8E00ED0086F4C3 /* ExploreTabBarRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75A02C8E00ED0086F4C3 /* ExploreTabBarRobot.swift */; };
+		5E0E75A32C8E02A40086F4C3 /* WhatsNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75A22C8E02A40086F4C3 /* WhatsNewUITests.swift */; };
+		5E0E75A52C8E03AF0086F4C3 /* WhatsNewRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75A42C8E03AF0086F4C3 /* WhatsNewRobot.swift */; };
+		5E0E75C22C934E900086F4C3 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75B62C934E900086F4C3 /* Robot.swift */; };
+		5E0E75C32C934E900086F4C3 /* Robot+AssertLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75B72C934E900086F4C3 /* Robot+AssertLayout.swift */; };
+		5E0E75C42C934E900086F4C3 /* Robot+FlushMonitorRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75B82C934E900086F4C3 /* Robot+FlushMonitorRequests.swift */; };
+		5E0E75C52C934E900086F4C3 /* SBTUITunneledApplication+Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75B92C934E900086F4C3 /* SBTUITunneledApplication+Specs.swift */; };
+		5E0E75C62C934E900086F4C3 /* StubCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75BA2C934E900086F4C3 /* StubCommand.swift */; };
+		5E0E75C72C934E900086F4C3 /* TabBarRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75BB2C934E900086F4C3 /* TabBarRobot.swift */; };
+		5E0E75C82C934E900086F4C3 /* UserDefaultsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75BC2C934E900086F4C3 /* UserDefaultsCommand.swift */; };
+		5E0E75C92C934E900086F4C3 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75BE2C934E900086F4C3 /* Stubs.swift */; };
+		5E0E75CA2C934E900086F4C3 /* Stubs+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75BF2C934E900086F4C3 /* Stubs+Info.swift */; };
+		5E0E75CB2C934E900086F4C3 /* Stubs+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75C02C934E900086F4C3 /* Stubs+Settings.swift */; };
+		5E0E75CD2C9358D10086F4C3 /* Stubs+Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75CC2C9358D00086F4C3 /* Stubs+Explore.swift */; };
+		5E0E75CF2C98AC520086F4C3 /* Robot+AssertAPISequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75CE2C98AC520086F4C3 /* Robot+AssertAPISequence.swift */; };
+		5E3A87952C8CAE240075726C /* MaintenanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A87942C8CAE240075726C /* MaintenanceUITests.swift */; };
 		6601C3A023BBB98000466BA3 /* ShowDetailHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601C39F23BBB98000466BA3 /* ShowDetailHeaderCollectionViewCell.swift */; };
 		6601F1AC2118488D0074C1DD /* IconNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601F1AB2118488D0074C1DD /* IconNotificationCell.swift */; };
 		66036EB42B967B2400DD36CC /* GIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66036EB32B967B2400DD36CC /* GIFView.swift */; };
@@ -773,12 +786,25 @@
 		268B0B9B5A247314B6D3FBD6 /* Pods-Kurozora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kurozora.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kurozora/Pods-Kurozora.release.xcconfig"; sourceTree = "<group>"; };
 		32DFEC9DB9F042A044F6CD30 /* Pods-KurozoraWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KurozoraWidgetExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-KurozoraWidgetExtension/Pods-KurozoraWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		33B9B6FC2A5B273980E1D63B /* Pods-BannerWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannerWidgetExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-BannerWidgetExtension/Pods-BannerWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		5E0E759C2C8D9A390086F4C3 /* MaintenanceRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceRobot.swift; sourceTree = "<group>"; };
+		5E0E759E2C8DA3FB0086F4C3 /* EmbeddedSafariRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedSafariRobot.swift; sourceTree = "<group>"; };
+		5E0E75A02C8E00ED0086F4C3 /* ExploreTabBarRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTabBarRobot.swift; sourceTree = "<group>"; };
+		5E0E75A22C8E02A40086F4C3 /* WhatsNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewUITests.swift; sourceTree = "<group>"; };
+		5E0E75A42C8E03AF0086F4C3 /* WhatsNewRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewRobot.swift; sourceTree = "<group>"; };
+		5E0E75B62C934E900086F4C3 /* Robot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		5E0E75B72C934E900086F4C3 /* Robot+AssertLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Robot+AssertLayout.swift"; sourceTree = "<group>"; };
+		5E0E75B82C934E900086F4C3 /* Robot+FlushMonitorRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Robot+FlushMonitorRequests.swift"; sourceTree = "<group>"; };
+		5E0E75B92C934E900086F4C3 /* SBTUITunneledApplication+Specs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SBTUITunneledApplication+Specs.swift"; sourceTree = "<group>"; };
+		5E0E75BA2C934E900086F4C3 /* StubCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubCommand.swift; sourceTree = "<group>"; };
+		5E0E75BB2C934E900086F4C3 /* TabBarRobot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarRobot.swift; sourceTree = "<group>"; };
+		5E0E75BC2C934E900086F4C3 /* UserDefaultsCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsCommand.swift; sourceTree = "<group>"; };
+		5E0E75BE2C934E900086F4C3 /* Stubs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		5E0E75BF2C934E900086F4C3 /* Stubs+Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stubs+Info.swift"; sourceTree = "<group>"; };
+		5E0E75C02C934E900086F4C3 /* Stubs+Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stubs+Settings.swift"; sourceTree = "<group>"; };
+		5E0E75CC2C9358D00086F4C3 /* Stubs+Explore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stubs+Explore.swift"; sourceTree = "<group>"; };
+		5E0E75CE2C98AC520086F4C3 /* Robot+AssertAPISequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Robot+AssertAPISequence.swift"; sourceTree = "<group>"; };
 		5E3A87922C8CAE240075726C /* KurozoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KurozoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E3A87942C8CAE240075726C /* KurozoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KurozoraUITests.swift; sourceTree = "<group>"; };
-		5E3A87962C8CAE240075726C /* KurozoraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KurozoraUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5E3A879D2C8D5DBC0075726C /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
-		5E3A879F2C8D63220075726C /* TabBarRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRobot.swift; sourceTree = "<group>"; };
-		5E3A87A12C8D63910075726C /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		5E3A87942C8CAE240075726C /* MaintenanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceUITests.swift; sourceTree = "<group>"; };
 		5E6CCFBA2C8C5A2B0011B3C1 /* Kurozora.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kurozora.entitlements; sourceTree = "<group>"; };
 		5E6CCFBB2C8C5A980011B3C1 /* KurozoraWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KurozoraWidget.entitlements; sourceTree = "<group>"; };
 		5FE9A09CBD4469DF87F4CD20 /* Pods_KurozoraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KurozoraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1566,14 +1592,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5E0E75962C8D97AF0086F4C3 /* Robots */ = {
+			isa = PBXGroup;
+			children = (
+				5E0E759C2C8D9A390086F4C3 /* MaintenanceRobot.swift */,
+				5E0E759E2C8DA3FB0086F4C3 /* EmbeddedSafariRobot.swift */,
+				5E0E75A02C8E00ED0086F4C3 /* ExploreTabBarRobot.swift */,
+				5E0E75A42C8E03AF0086F4C3 /* WhatsNewRobot.swift */,
+			);
+			path = Robots;
+			sourceTree = "<group>";
+		};
+		5E0E75BD2C934E900086F4C3 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				5E0E75B62C934E900086F4C3 /* Robot.swift */,
+				5E0E75B72C934E900086F4C3 /* Robot+AssertLayout.swift */,
+				5E0E75B82C934E900086F4C3 /* Robot+FlushMonitorRequests.swift */,
+				5E0E75B92C934E900086F4C3 /* SBTUITunneledApplication+Specs.swift */,
+				5E0E75BA2C934E900086F4C3 /* StubCommand.swift */,
+				5E0E75BB2C934E900086F4C3 /* TabBarRobot.swift */,
+				5E0E75BC2C934E900086F4C3 /* UserDefaultsCommand.swift */,
+				5E0E75CE2C98AC520086F4C3 /* Robot+AssertAPISequence.swift */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		5E0E75C12C934E900086F4C3 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				5E0E75BE2C934E900086F4C3 /* Stubs.swift */,
+				5E0E75CC2C9358D00086F4C3 /* Stubs+Explore.swift */,
+				5E0E75BF2C934E900086F4C3 /* Stubs+Info.swift */,
+				5E0E75C02C934E900086F4C3 /* Stubs+Settings.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		5E3A87932C8CAE240075726C /* KurozoraUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5E3A87942C8CAE240075726C /* KurozoraUITests.swift */,
-				5E3A87962C8CAE240075726C /* KurozoraUITestsLaunchTests.swift */,
-				5E3A879D2C8D5DBC0075726C /* Robot.swift */,
-				5E3A879F2C8D63220075726C /* TabBarRobot.swift */,
-				5E3A87A12C8D63910075726C /* Stubs.swift */,
+				5E0E75BD2C934E900086F4C3 /* Specs */,
+				5E0E75C12C934E900086F4C3 /* Stubs */,
+				5E0E75962C8D97AF0086F4C3 /* Robots */,
+				5E3A87942C8CAE240075726C /* MaintenanceUITests.swift */,
+				5E0E75A22C8E02A40086F4C3 /* WhatsNewUITests.swift */,
 			);
 			path = KurozoraUITests;
 			sourceTree = "<group>";
@@ -4078,6 +4141,7 @@
 				5E3A878E2C8CAE240075726C /* Sources */,
 				5E3A878F2C8CAE240075726C /* Frameworks */,
 				5E3A87902C8CAE240075726C /* Resources */,
+				74B381551B684DBCC39DB381 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -4497,6 +4561,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		74B381551B684DBCC39DB381 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KurozoraUITests/Pods-KurozoraUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KurozoraUITests/Pods-KurozoraUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KurozoraUITests/Pods-KurozoraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C4D3519F59E49E683C3D0828 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -4539,11 +4620,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3A87972C8CAE240075726C /* KurozoraUITestsLaunchTests.swift in Sources */,
-				5E3A879E2C8D5DBC0075726C /* Robot.swift in Sources */,
-				5E3A87A02C8D63220075726C /* TabBarRobot.swift in Sources */,
-				5E3A87952C8CAE240075726C /* KurozoraUITests.swift in Sources */,
-				5E3A87A22C8D63910075726C /* Stubs.swift in Sources */,
+				5E0E75C52C934E900086F4C3 /* SBTUITunneledApplication+Specs.swift in Sources */,
+				5E0E75A52C8E03AF0086F4C3 /* WhatsNewRobot.swift in Sources */,
+				5E0E75CA2C934E900086F4C3 /* Stubs+Info.swift in Sources */,
+				5E0E759F2C8DA3FB0086F4C3 /* EmbeddedSafariRobot.swift in Sources */,
+				5E0E75C22C934E900086F4C3 /* Robot.swift in Sources */,
+				5E0E759D2C8D9A390086F4C3 /* MaintenanceRobot.swift in Sources */,
+				5E0E75C82C934E900086F4C3 /* UserDefaultsCommand.swift in Sources */,
+				5E0E75C42C934E900086F4C3 /* Robot+FlushMonitorRequests.swift in Sources */,
+				5E0E75C62C934E900086F4C3 /* StubCommand.swift in Sources */,
+				5E0E75C32C934E900086F4C3 /* Robot+AssertLayout.swift in Sources */,
+				5E0E75CD2C9358D10086F4C3 /* Stubs+Explore.swift in Sources */,
+				5E0E75C92C934E900086F4C3 /* Stubs.swift in Sources */,
+				5E0E75A12C8E00ED0086F4C3 /* ExploreTabBarRobot.swift in Sources */,
+				5E0E75CB2C934E900086F4C3 /* Stubs+Settings.swift in Sources */,
+				5E0E75CF2C98AC520086F4C3 /* Robot+AssertAPISequence.swift in Sources */,
+				5E3A87952C8CAE240075726C /* MaintenanceUITests.swift in Sources */,
+				5E0E75C72C934E900086F4C3 /* TabBarRobot.swift in Sources */,
+				5E0E75A32C8E02A40086F4C3 /* WhatsNewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5140,7 +5234,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
@@ -5164,7 +5258,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;

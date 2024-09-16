@@ -18,6 +18,7 @@ PODS:
   - SBTUITestTunnelCommon (11.0.0)
   - SBTUITestTunnelServer (11.0.0):
     - SBTUITestTunnelCommon (= 11.0.0)
+  - SnapshotTesting (1.9.0)
   - Solar (2.1.0)
   - SPConfetti (1.4.0)
   - SwifterSwift (6.2.0):
@@ -82,6 +83,7 @@ DEPENDENCIES:
   - ReachabilitySwift
   - SBTUITestTunnelClient
   - SBTUITestTunnelServer
+  - SnapshotTesting
   - Solar
   - SPConfetti
   - SwifterSwift
@@ -109,6 +111,7 @@ SPEC REPOS:
     - SBTUITestTunnelClient
     - SBTUITestTunnelCommon
     - SBTUITestTunnelServer
+    - SnapshotTesting
     - Solar
     - SPConfetti
     - SwifterSwift
@@ -145,6 +148,7 @@ SPEC CHECKSUMS:
   SBTUITestTunnelClient: ff68080a0b3e1e12a4b57e0a6719a0deab918040
   SBTUITestTunnelCommon: 6bf85343e963a9f940d8050947e083908c978f8d
   SBTUITestTunnelServer: fd8a0aa0baf6455ceb3c77ccc7d61018001cd95d
+  SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
   Solar: 2dc6e7cc39186cb0c8228fa08df76fb50c7d8f24
   SPConfetti: 4ba720ff652d960f59c3e4eadee2c0c3ef6ce9a4
   SwifterSwift: dd00873fb09cde19da88bdb2878f9fe70fe27b0f
@@ -155,6 +159,6 @@ SPEC CHECKSUMS:
   WhatsNew: d66a52b294e90d5bc133877e270ea7ce0b945003
   XCDYouTubeKit: b120aced3d8638ffb570c5450cddb5a1dac448c7
 
-PODFILE CHECKSUM: 6033d193d218463936a7fcbb5db868f07ea388eb
+PODFILE CHECKSUM: c2717595d7095e07ca5b10271807d3fef6727782
 
 COCOAPODS: 1.15.2

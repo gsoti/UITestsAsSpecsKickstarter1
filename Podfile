@@ -50,6 +50,7 @@ end
 
 target 'KurozoraUITests' do
   pod 'SBTUITestTunnelClient'
+  pod 'SnapshotTesting'
 end
 
 # MARK: - Post install scripts
