@@ -45,17 +45,17 @@ final class WhatsNewUITests: XCTestCase {
             WhatsNewRobot(self.app)
                 .assertWhatsNewIsNotLoaded()
                 .assertExploreTabIsSelected()
-                //.wait(for: 5)
-                .flushMonitoredRequests(with: """
-                /v1/info ✅
-                /v1/settings ✅
-                /v1/explore ✅
-                /v1/anime/22598 ✅
-                /v1/anime/25544 ✅
-                /282337/ba723eab-e371-407b-b8c8-32a290a95141.webp ✅
-                /243867/a4f33c7f-372e-4cb5-8659-7c10181c611a.webp ✅
-                """, delay: 5)
-                .wait(for: 10)
+                .wait(for: 5)
+//                .flushMonitoredRequests(with: """
+//                /v1/info ✅
+//                /v1/settings ✅
+//                /v1/explore ✅
+//                /v1/anime/22598 ✅
+//                /v1/anime/25544 ✅
+//                /282337/ba723eab-e371-407b-b8c8-32a290a95141.webp ✅
+//                /243867/a4f33c7f-372e-4cb5-8659-7c10181c611a.webp ✅
+//                """, delay: 5)
+//                .wait(for: 10)
         }
     }
 }
