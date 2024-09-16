@@ -25,7 +25,6 @@
 		5E0E75CA2C934E900086F4C3 /* Stubs+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75BF2C934E900086F4C3 /* Stubs+Info.swift */; };
 		5E0E75CB2C934E900086F4C3 /* Stubs+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75C02C934E900086F4C3 /* Stubs+Settings.swift */; };
 		5E0E75CD2C9358D10086F4C3 /* Stubs+Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75CC2C9358D00086F4C3 /* Stubs+Explore.swift */; };
-		5E0E75CF2C98AC520086F4C3 /* Robot+AssertAPISequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E75CE2C98AC520086F4C3 /* Robot+AssertAPISequence.swift */; };
 		5E3A87952C8CAE240075726C /* MaintenanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A87942C8CAE240075726C /* MaintenanceUITests.swift */; };
 		6601C3A023BBB98000466BA3 /* ShowDetailHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601C39F23BBB98000466BA3 /* ShowDetailHeaderCollectionViewCell.swift */; };
 		6601F1AC2118488D0074C1DD /* IconNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601F1AB2118488D0074C1DD /* IconNotificationCell.swift */; };
@@ -802,7 +801,6 @@
 		5E0E75BF2C934E900086F4C3 /* Stubs+Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stubs+Info.swift"; sourceTree = "<group>"; };
 		5E0E75C02C934E900086F4C3 /* Stubs+Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stubs+Settings.swift"; sourceTree = "<group>"; };
 		5E0E75CC2C9358D00086F4C3 /* Stubs+Explore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stubs+Explore.swift"; sourceTree = "<group>"; };
-		5E0E75CE2C98AC520086F4C3 /* Robot+AssertAPISequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Robot+AssertAPISequence.swift"; sourceTree = "<group>"; };
 		5E3A87922C8CAE240075726C /* KurozoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KurozoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3A87942C8CAE240075726C /* MaintenanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceUITests.swift; sourceTree = "<group>"; };
 		5E6CCFBA2C8C5A2B0011B3C1 /* Kurozora.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kurozora.entitlements; sourceTree = "<group>"; };
@@ -1613,7 +1611,6 @@
 				5E0E75BA2C934E900086F4C3 /* StubCommand.swift */,
 				5E0E75BB2C934E900086F4C3 /* TabBarRobot.swift */,
 				5E0E75BC2C934E900086F4C3 /* UserDefaultsCommand.swift */,
-				5E0E75CE2C98AC520086F4C3 /* Robot+AssertAPISequence.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -4634,7 +4631,6 @@
 				5E0E75C92C934E900086F4C3 /* Stubs.swift in Sources */,
 				5E0E75A12C8E00ED0086F4C3 /* ExploreTabBarRobot.swift in Sources */,
 				5E0E75CB2C934E900086F4C3 /* Stubs+Settings.swift in Sources */,
-				5E0E75CF2C98AC520086F4C3 /* Robot+AssertAPISequence.swift in Sources */,
 				5E3A87952C8CAE240075726C /* MaintenanceUITests.swift in Sources */,
 				5E0E75C72C934E900086F4C3 /* TabBarRobot.swift in Sources */,
 				5E0E75A32C8E02A40086F4C3 /* WhatsNewUITests.swift in Sources */,
